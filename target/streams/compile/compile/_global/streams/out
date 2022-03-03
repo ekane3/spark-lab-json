@@ -1,0 +1,4 @@
+[0m[[0m[31merror[0m] [0m[0mD:\OneDrive - Efrei\Bureau\ECOLE\DataEngineering\spark-lab-json\src\main\scala\com\tp\spark\core\Ex2TweetMining.scala:54:35: value mentions is not a member of com.tp.spark.utils.TweetUtils.Tweet[0m
+[0m[[0m[31merror[0m] [0m[0m    tweets.flatMap(tweet => tweet.mentions)[0m
+[0m[[0m[31merror[0m] [0m[0m                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
