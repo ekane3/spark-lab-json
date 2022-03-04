@@ -10,3 +10,4 @@
 1646303061136:testOnly *Ex2TweetMiningSpec
 1646304058432:testOnly *Ex3HashTagMiningSpec
 1646307707312:testOnly *Ex4InvertedIndexSpec
+1646399900291:testOnly *Ex1UserMiningSpec

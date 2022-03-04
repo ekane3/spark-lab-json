@@ -27,14 +27,18 @@ object Ex0WordcountDF {
    *  Now count how much each word appears!
    */
   def wordcountDF() : DataFrame = {
-    ???
+    val df = loadData()
+    val words = df.select("line").rdd.flatMap(x => x.getString(0).split(" "))
+    val wordCounts = words.map(x => (x, 1)).reduceByKey((x, y) => x + y)
+    wordCounts.toDF("word", "count")
   }
 
   /**
    *  Now keep the word which appear strictly more than 4 times!
    */
   def filterOnWordcountDF() : DataFrame = {
-    ???
+    val df = wordcountDF()
+    df.filter(df("count") > 4)
   }
 
 }
